@@ -2,6 +2,8 @@
 
 A collection of command-line tools for working with LED fade curves and cue sequences used in unu Scooter Pro. These tools handle both linear and bezier curve interpolation, providing bidirectional conversion between binary and human-readable JSON formats, plus comprehensive visualization capabilities.
 
+Part of the [Librescoot](https://librescoot.org/) open-source platform.
+
 ## What These Tools Do
 
 The unu Scooter Pro uses PWM (Pulse Width Modulation) to control brightness across multiple LED channels like the front light ring, headlight beam, brake lights, and turn signals. The system stores lighting patterns as either:
@@ -285,3 +287,14 @@ Human eyes perceive LED brightness logarithmically - doubling from 1% to 2% is m
 ### Curve Types Explained
 - **Linear**: Each control point connects with straight lines. Simple and predictable.
 - **Bezier**: All control points work together to create a smooth curve. The curve doesn't necessarily pass through middle control points, but is influenced by all of them. Perfect for smooth, natural-looking LED transitions like gentle power-on sequences.
+
+## License
+
+This project is dual-licensed. The source code is available under the
+[Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License][cc-by-nc-sa].
+The maintainers reserve the right to grant separate licenses for commercial distribution; please contact the maintainers to discuss commercial licensing.
+
+[![CC BY-NC-SA 4.0][cc-by-nc-sa-image]][cc-by-nc-sa]
+
+[cc-by-nc-sa]: http://creativecommons.org/licenses/by-nc-sa/4.0/
+[cc-by-nc-sa-image]: https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png
